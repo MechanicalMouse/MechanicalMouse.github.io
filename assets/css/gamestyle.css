@@ -1,0 +1,17 @@
+.container{
+    text-align: center;
+    background-color: black;
+    color: gray;
+}
+
+#body {
+    background-color: rgb(155, 121, 29);
+}
+
+#eye {
+    width: 250px;
+}
+
+#main-container {
+    padding: 10px
+}

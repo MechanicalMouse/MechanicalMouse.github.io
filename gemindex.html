@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/gemstyle.css">
+    <title>Gem Collector Game</title>
+
+</head>
+<body>
+    <header>
+        <img id="gem-bag" src="assets/images/gembag.png" alt="Gem Bag">
+        <h1>The Gem Collector</h1>
+    </header>
+
+    <div id="instructions">
+        <h2>Instructions:</h2>
+            <br>
+            <p>Each time you click a gem you will add a specific amount of points to your total score.</p>
+            <p>The value of each gem is unknown until you click on it.</p>
+            <p>When the game starts, the values of each gem will be assigned randomly.</p>
+			<p>You win the game by matching your total score to the goal number.</p>
+			<p>You lose the game if your total score goes above the goal number.</p>
+			
+
+    </div>
+
+    <div id="gems">
+  
+    </div>
+
+    <div id="game">
+        <h2>Goal: <span id="goal-number"></span></h2>
+        <br>
+        <p id="wins">Wins: </p>
+        <p id="losses">Losses: </p>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="assets/javascript/gemgame.js"></script>
+
+</body>
+</html>

@@ -127,10 +127,7 @@ footer {
   border: 1px solid #dddddd;
 }
 
-#eye {
-  width: 100%;
-  height: 205px;
-}
+
 
 h3, h2 {
   padding-bottom: 20px;
@@ -140,6 +137,16 @@ h3, h2 {
 }
 
 /* portfolio page */
+
+#eye {
+  width: 100%;
+  height: 205px;
+}
+
+#gem {
+  width: 100%;
+  height: 205px;
+}
 
 .work {
   position: relative;

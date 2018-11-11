@@ -1,4 +1,7 @@
 .container{
+    border-style: outset;
+    border-width: 5px;
+    border-color: grey;
     text-align: center;
     background-color: black;
     color: gray;

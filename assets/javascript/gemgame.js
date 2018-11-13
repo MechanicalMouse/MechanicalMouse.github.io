@@ -1,13 +1,16 @@
 var counter = 0;
-var goal = 55;
-var numberOptions = [3, 5, 7, 10]
+var goal = [Math.floor((Math.random() * 120 - 19 + 1) + 19)];
+var numberOptions = [Math.floor(Math.random() * (12 - 1 + 1) + 1), Math.floor(Math.random() * (12 - 1 + 1) + 1), Math.floor(Math.random() * (12 - 1 + 1) + 1), Math.floor(Math.random() * (12 - 1 + 1) + 1)];
 var gemArray = ["assets/images/green-gem.png","assets/images/blue-gem.png","assets/images/purple-gem.png","assets/images/pink-gem.png"]
 var wins = 0;
 var losses = 0;
 
 var reset = function() {
-	counter = 0;
+    counter = 0;
+    goal = [Math.floor((Math.random() * 120 - 19 + 1) + 19)];
+    numberOptions();
 }
+
 
 $("#goal-number").text(goal);
 

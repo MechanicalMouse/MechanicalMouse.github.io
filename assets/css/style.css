@@ -138,12 +138,7 @@ h3, h2 {
 
 /* portfolio page */
 
-#eye {
-  width: 100%;
-  height: 205px;
-}
-
-#gem {
+#eye, #gem, #quiz{
   width: 100%;
   height: 205px;
 }

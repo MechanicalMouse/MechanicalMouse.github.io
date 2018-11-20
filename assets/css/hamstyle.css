@@ -1,0 +1,65 @@
+body {
+    background-image: url('../images/hamtaroback.jpg');
+    color: black;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 60px;
+    color: tan;
+}
+
+header {
+    font-size: 60px;
+    color: tan;
+    margin-top: 2%;
+}
+
+#startScreen {
+    background-image: url('../images/plain.png');
+    background-repeat: no-repeat;
+    width: 35%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.startBox {
+    margin: 0 auto;
+    text-align: center;
+    padding: 4%;
+    margin-top: 40%;
+}
+
+body .container {
+    background-image: url('../images/hamtaro-heke.jpg');
+    height: 100%;
+    text-align: center;
+    display: none;
+    margin-bottom: 5%;
+    padding-bottom: 2%;
+    margin-top: 5%;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#scoreBoard {
+    display: none;
+    background-image: url('../images/plain.png');
+    width: 35%;
+    margin: 0 auto;
+    padding: 2%;
+    margin-top: 15%;
+    font-size: 21px;
+}
+
+.scoreBox {
+    margin: 0 auto;
+    text-align: center;
+    padding: 4%;
+}
+
+.timeRemain {
+    padding: 2%;
+    color:rgb(134, 87, 26);
+}

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/css/hamstyle.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
     <script src="assets/javascript/jquery.js "></script>
     <title>Hamster Trivia Game</title>
 </head>
@@ -21,16 +21,6 @@
         </div>
     </div>
     
-    <div class="container">
-        <header>Hamster Trivia!</header>
-        <div class="row timeRemain">Time Remaining:
-        <div id="time-remain">60</div>
-    </div>
-
-    <div class="questions">
-        <button type="button" class="btn btn-success" id="sub-btn">Submit</button>
-    </div>
-   
     <div id="scoreBoard">
         <div class="scoreBox">
             <h2 class="up">Times Up!</h2>
@@ -39,6 +29,18 @@
             <p id="incorrectTotal">Incorrect Answers: </p>
         </div>
     </div>
+    
+    <div class="container">
+        <header>Hamster Trivia!</header>
+        <div class="timeLeft">Time Remaining:
+        <div id="time-left">60</div>
+    </div>
+
+    <div class="questions">
+        <button type="button" class="btn btn-success" id="sub-btn">Submit</button>
+    </div>
+   
+    
 
 <script src="assets/javascript/app.js"></script>
 </body>

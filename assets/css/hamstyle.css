@@ -51,6 +51,7 @@ body .container {
     padding: 2%;
     margin-top: 15%;
     font-size: 21px;
+    border-radius: 5px;
 }
 
 .scoreBox {
@@ -59,7 +60,7 @@ body .container {
     padding: 4%;
 }
 
-.timeRemain {
+.timeLeft {
     padding: 2%;
     color:rgb(134, 87, 26);
 }

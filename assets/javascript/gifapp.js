@@ -26,7 +26,7 @@ $("#add-button").on("click", function(event) {
     event.preventDefault();
     
     var topic = $("#button-input").val().trim();
-       
+    
     topics.push(topic);
 
        

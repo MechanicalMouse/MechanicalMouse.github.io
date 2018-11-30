@@ -1,6 +1,6 @@
-var topics = ["hamster", "space", "food", "raichu", "tea"]
+var topics = ["hamster", "space", "food", "raichu", "tea", "star trek", "runescape"]
 
-
+//make buttons
 function renderButtons() {    
        
     $("#buttons").empty();
@@ -21,7 +21,7 @@ function renderButtons() {
        }
 }
 
-     
+//add new topic
 $("#add-button").on("click", function(event) {
     event.preventDefault();
     
@@ -36,10 +36,10 @@ $("#add-button").on("click", function(event) {
 
 renderButtons();
 
-
+//gif function
 $("button").on("click", function() {
-
-    var queryURL = `https://api.giphy.com/v1/gifs/search?q=${topics}&api_key=UA4jHqQhXxYph6oiBOoI7fl8fNLsuZIt`;
+    var topic = $(this).attr("data-name");
+    var queryURL = `https://api.giphy.com/v1/gifs/search?q=${topic}&limit=10&api_key=UA4jHqQhXxYph6oiBOoI7fl8fNLsuZIt`;
 
     $.ajax({
       url: queryURL,
@@ -74,7 +74,7 @@ $("button").on("click", function() {
                 gifDiv.prepend(topicImage);
 
             
-                $("#gifs-appear-here").prepend(gifDiv);
+                $("#gifs").prepend(gifDiv);
             }
         }
     });

@@ -3,7 +3,7 @@ body {
   font-size: 18px;
   line-height: 34px;
   color: #777777;
-  background: url("../images/subtle_white_mini_waves.png");
+  background: url("../images/starring.png");
 }
 
 * {
@@ -55,12 +55,12 @@ h3 {
 #masthead {
   position: fixed;
   z-index: 99;
-  width: 100%;
-  margin: 0 0 30px;
+  width: 1262px;
+  margin: 0;
   overflow: auto;
-  color: #ffffff;
-  background: #ffffff;
-  border-bottom: 2px solid #cccccc;
+  color: #666666;
+  background: #666666;
+  border-bottom: 8px solid #4aaaa5;
 }
 
 #logo {
@@ -75,6 +75,9 @@ h3 {
   text-align: center;
   text-decoration: none;
   background: #4aaaa5;
+  border-top: 2px outset;
+  border-left: 2px outset;
+  border-right: 2px outset;
 }
 
 nav {

@@ -230,14 +230,18 @@ input[type=submit] {
     display: block;
     width: 100%;
     height: auto;
+    border: none;
   }
 
   nav{
-    width: 100%;
     margin-top: 5px;
-    text-align: center;
   }
   
+  #masthead{
+    border-bottom: none;
+    width: 97.5%;
+  }
+
   .container{
     margin-top: -15px;
   }
@@ -249,6 +253,14 @@ input[type=submit] {
 }
 
 @media only screen and (max-width: 768px) {
+  #logo{
+    border-left: none;
+  }
+  
+  nav{
+    width: 45%;
+  }
+  
   .auth-image{
     width: 50%;
   }

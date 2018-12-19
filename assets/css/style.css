@@ -231,12 +231,14 @@ input[type=submit] {
     width: 100%;
     height: auto;
     border: none;
+    margin-top: 5px;
   }
 
   nav{
-    margin-top: 5px;
+    float: none;
+    margin-top: 10px;
   }
-  
+
   #masthead{
     border-bottom: none;
     width: 97.5%;

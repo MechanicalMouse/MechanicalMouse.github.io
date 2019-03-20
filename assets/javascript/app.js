@@ -1,9 +1,9 @@
 var questions = [{
-    ques: "Hamsters were named from the German word 'hamstern' which means:",
-    ans: ["To burrow", "To hoard", "To gnaw", "To gather"],
-    name: "hamstern",
-    correct: "to hoard",
-    divClass: ".hamstern"
+    ques: "Hamsters were named from the German word 'hamustro' which means:",
+    ans: ["wheat vole", "corn weevil", "potato ferret", "carrot guineapig"],
+    name: "hamustro",
+    correct: "corn weevil",
+    divClass: ".hamustro"
 },
 {
     ques: "What's the best way to pick up a hamster?",

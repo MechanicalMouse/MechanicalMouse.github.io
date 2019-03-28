@@ -16,7 +16,7 @@ var questions = [{
     ques: "What's the best way to pick up a hamster?",
     ans: ["By the paws", "By the scruff", "Scoop up with both hands", "Sneak up and grab them"],
     name: "pickUp",
-    correct: " Scoop with both hands",
+    correct: " Scoop up with both hands",
     divClass: ".pickUp"
 },
 {

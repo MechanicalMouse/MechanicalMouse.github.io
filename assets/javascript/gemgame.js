@@ -7,10 +7,10 @@ var numberOptions =
  Math.floor(Math.random() * (12 - 1 + 1) + 1)];
 
 var gemArray = 
-["assets/images/green-gem.png",
-"assets/images/blue-gem.png",
-"assets/images/purple-gem.png",
-"assets/images/pink-gem.png"]
+["assets/images/gemGame/green-gem.png",
+"assets/images/gemGame/blue-gem.png",
+"assets/images/gemGame/purple-gem.png",
+"assets/images/gemGame/pink-gem.png"]
 var wins = 0;
 var losses = 0;
 

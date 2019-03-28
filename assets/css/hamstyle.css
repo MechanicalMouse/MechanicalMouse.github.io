@@ -1,5 +1,5 @@
 body {
-    background-image: url('../images/hamtaroback.jpg');
+    background-image: url('../images/hamTrivia/hamtaroback.jpg');
     color: black;
     letter-spacing: 2px;
 }
@@ -16,7 +16,7 @@ header {
 }
 
 #startScreen {
-    background-image: url('../images/plain.png');
+    background-image: url('../images/hamTrivia/plain.png');
     background-repeat: no-repeat;
     width: 35%;
     margin: 0 auto;
@@ -31,7 +31,7 @@ header {
 }
 
 body .container {
-    background-image: url('../images/hamtaro-heke.jpg');
+    background-image: url('../images/hamTrivia/hamtaro-heke.jpg');
     height: 100%;
     text-align: center;
     display: none;
@@ -45,7 +45,7 @@ body .container {
 
 #scoreBoard {
     display: none;
-    background-image: url('../images/plain.png');
+    background-image: url('../images/hamTrivia/plain.png');
     width: 35%;
     margin: 0 auto;
     padding: 2%;

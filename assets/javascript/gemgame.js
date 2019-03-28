@@ -1,38 +1,49 @@
-// I can't for the life of me figure out why the console.log reads as and counts as loss even if it's a win, or get it to reset the goal number.
-
 var counter = 0;
 var goal = Math.floor((Math.random() * 120 - 19 + 1) + 19);
-var numberOptions = [Math.floor(Math.random() * (12 - 1 + 1) + 1), Math.floor(Math.random() * (12 - 1 + 1) + 1), Math.floor(Math.random() * (12 - 1 + 1) + 1), Math.floor(Math.random() * (12 - 1 + 1) + 1)];
-var gemArray = ["assets/images/green-gem.png","assets/images/blue-gem.png","assets/images/purple-gem.png","assets/images/pink-gem.png"]
+var numberOptions = 
+[Math.floor(Math.random() * (12 - 1 + 1) + 1),
+ Math.floor(Math.random() * (12 - 1 + 1) + 1),
+ Math.floor(Math.random() * (12 - 1 + 1) + 1),
+ Math.floor(Math.random() * (12 - 1 + 1) + 1)];
+
+var gemArray = 
+["assets/images/green-gem.png",
+"assets/images/blue-gem.png",
+"assets/images/purple-gem.png",
+"assets/images/pink-gem.png"]
 var wins = 0;
 var losses = 0;
 
-var reset = function() {
-    counter = 0;
-    goal = Math.floor((Math.random() * 120 - 19 + 1) + 19);
-    for (var i = 0; i < numberOptions.length; i++){
-        numberOptions[i] = Math.floor(Math.random() * (12 - 1 + 1) + 1)
+var gemsValue = function(){
+
+    $("#gems").empty()
+
+    for (var i = 0; i < numberOptions.length; i++) {
+
+        var imageGem = $("<img>");
+    
+        imageGem.addClass("gem-image");
+    
+        imageGem.attr("src", gemArray[i]);
+    
+        imageGem.attr("data-gemvalue", numberOptions[i]);
+    
+        $("#gems").append(imageGem);
+    
     }
+}
+
+gemsValue();
+
+var reset = function() {
+    gemsValue();
+    counter = 0;
+    var goal = Math.floor((Math.random() * 120 - 19 + 1) + 19);
 
     $("#goal-number").text(goal);
 }
 
-
 $("#goal-number").text(goal);
-
-for (var i = 0; i < numberOptions.length; i++) {
-
-    var imageGem = $("<img>");
-    
-    imageGem.addClass("gem-image");
-    
-    imageGem.attr("src", gemArray[i]);
-    
-    imageGem.attr("data-gemvalue", numberOptions[i]);
-    
-    $("#gems").append(imageGem);
-    
-}
     
 $(".gem-image").on("click", function() {
 
@@ -43,7 +54,7 @@ $(".gem-image").on("click", function() {
 
     console.log("New score is: " + counter);
     console.log("Goal", goal)
-
+    $("#counter").text(counter);
 
 if (counter === goal) {
     console.log("You win!")

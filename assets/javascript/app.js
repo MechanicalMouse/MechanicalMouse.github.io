@@ -1,23 +1,23 @@
 var questions = [{
     ques: "Hamsters were named from the German word 'hamustro' which means:",
-    ans: ["wheat vole", "corn weevil", "potato ferret", "carrot guineapig"],
+    ans: ["Wheat vole", "Corn weevil", "Potato ferret", "Carrot rat"],
     name: "hamustro",
     correct: "corn weevil",
     divClass: ".hamustro"
 },
 {
-    ques: "What's the best way to pick up a hamster?",
-    ans: ["By the paws", "By the scruff", "Scoop with both hands", "Sneak up and grab them"],
-    name: "pickUp",
-    correct: " Scoop with both hands",
-    divClass: ".pickUp"
-},
-{
-    ques: "What food is bad for hamsters?",
+    ques: "What food is poisonous for hamsters?",
     ans: ["Chocolate", "Strawberries", "Corn", "Walnuts"],
     name: "badFood",
     correct: "Chocolate",
     divClass: ".badFood"
+},
+{
+    ques: "What's the best way to pick up a hamster?",
+    ans: ["By the paws", "By the scruff", "Scoop up with both hands", "Sneak up and grab them"],
+    name: "pickUp",
+    correct: " Scoop with both hands",
+    divClass: ".pickUp"
 },
 {
     ques: "Where do Golden hamsters originate from?",
@@ -46,7 +46,7 @@ var incorrectAnswers = 0;
 
 var startGame = $("#start-btn").on("click", function() {
     $(this).parent().hide();
-    $('.container').show();
+    $(".container").show();
     countdown(60);
     questionDisplay();
 });
@@ -57,13 +57,13 @@ var labels = ["first", "second", "third", "forth"];
 var questionDisplay = function() {
     
     for (var j = 0; j < 6; j++) {
-        $('.questions').prepend('<div class="' + questions[j].name + '"></div>');
-        $(questions[j].divClass).append('<div class ="ques-title">' + questions[j].ques + '</div>');
+        $(".questions").prepend(`<div class="${questions[j].name}"></div>`);
+        $(questions[j].divClass).append(`<div class ="ques-title"> ${questions[j].ques} </div>`);
 
         for (var i = 0; i <= 3; i++) {
-            $(questions[j].divClass).append('<input type="radio"  name="'+ questions[j].name + '" value="'+ questions[j].ans[i] + '"/><label for="' + labels[i] + '">' + questions[j].ans[i] + '</label>');
+            $(questions[j].divClass).append(` <input type="radio"  name="${questions[j].name}" value="${questions[j].ans[i]}"/> <label for="${labels[i]}"> <br> ${questions[j].ans[i]}</label>`);
         }
-        $('.questions').prepend('<br> <br>');
+        $(".questions").prepend("<br> <br>");
     }
 }
 
@@ -75,14 +75,14 @@ var countdown = function(seconds) {
         
 
         if (seconds === 0) {
-            $('.container').fadeOut(500);
+            $(".container").fadeOut(500);
+
             correctAnswers = 0;
             incorrectAnswers = 0;
 
-
-            $('#correctTotal').append(correctAnswers);
-            $('#incorrectTotal').append(incorrectAnswers);
-            $('#scoreBoard').fadeIn(1000);
+            $("#correctTotal").append(correctAnswers);
+            $("#incorrectTotal").append(incorrectAnswers);
+            $("#scoreBoard").fadeIn(1000);
 
             clearInterval(timer);
 
@@ -90,26 +90,26 @@ var countdown = function(seconds) {
     }, 1000);
 
 
-    $('#sub-btn').on('click', function() {
+    $("#sub-btn").on("click", function() {
         clearInterval(timer);
-        $('.container').fadeOut(500);
+        $(".container").fadeOut(500);
         
         for (var i = 0; i < 6; i++) {
     
-            if ($('input:radio[name="' + questions[i].name + '"]:checked').val() === questions[i].correct) {
+            if ($(`input:radio[name="${questions[i].name}"]:checked`).val() === questions[i].correct) {
     
                 correctAnswers++;
-                $('#correctTotal').append(correctAnswers);
+                $("#correctTotal").append(correctAnswers);
             } else {
                 incorrectAnswers++;
-                $('#incorrectTotal').append(incorrectAnswers);
+                $("#incorrectTotal").append(incorrectAnswers);
             };
 
             
         };
 
 
-        $('#scoreBoard').fadeIn(1000);
+        $("#scoreBoard").fadeIn(1000);
 
 
     })

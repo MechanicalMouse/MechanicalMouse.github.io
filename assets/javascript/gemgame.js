@@ -45,7 +45,7 @@ var reset = function() {
 
 $("#goal-number").text(goal);
     
-$(".gem-image").on("click", function() {
+$(document).on("click", ".gem-image",function() {
 
     var gemValue = ($(this).attr("data-gemvalue"));
     gemValue = parseInt(gemValue);

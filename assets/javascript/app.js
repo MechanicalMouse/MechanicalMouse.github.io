@@ -2,7 +2,7 @@ var questions = [{
     ques: "Hamsters were named from the German word 'hamustro' which means:",
     ans: ["Wheat vole", "Corn weevil", "Potato ferret", "Carrot rat"],
     name: "hamustro",
-    correct: "corn weevil",
+    correct: "Corn weevil",
     divClass: ".hamustro"
 },
 {
@@ -16,7 +16,7 @@ var questions = [{
     ques: "What's the best way to pick up a hamster?",
     ans: ["By the paws", "By the scruff", "Scoop up with both hands", "Sneak up and grab them"],
     name: "pickUp",
-    correct: " Scoop up with both hands",
+    correct: "Scoop up with both hands",
     divClass: ".pickUp"
 },
 {
@@ -39,7 +39,7 @@ var questions = [{
     name: "wheel",
     correct: "Wire",
     divClass: ".wheel",
-}]
+}];
 
 var correctAnswers = 0;
 var incorrectAnswers = 0;
@@ -65,7 +65,7 @@ var questionDisplay = function() {
         }
         $(".questions").prepend("<br> <br>");
     }
-}
+};
 
 var countdown = function(seconds) {
 
@@ -80,13 +80,14 @@ var countdown = function(seconds) {
             correctAnswers = 0;
             incorrectAnswers = 0;
 
-            $("#correctTotal").append(correctAnswers);
-            $("#incorrectTotal").append(incorrectAnswers);
+            $("#correct").html(correctAnswers);
+            $("#incorrect").html(incorrectAnswers);
             $("#scoreBoard").fadeIn(1000);
 
             clearInterval(timer);
 
         }
+
     }, 1000);
 
 
@@ -99,10 +100,10 @@ var countdown = function(seconds) {
             if ($(`input:radio[name="${questions[i].name}"]:checked`).val() === questions[i].correct) {
     
                 correctAnswers++;
-                $("#correctTotal").append(correctAnswers);
+                $("#correct").html(correctAnswers);
             } else {
                 incorrectAnswers++;
-                $("#incorrectTotal").append(incorrectAnswers);
+                $("#incorrect").html(incorrectAnswers);
             };
 
             
@@ -111,7 +112,12 @@ var countdown = function(seconds) {
 
         $("#scoreBoard").fadeIn(1000);
 
-
-    })
+    });
     
 };
+
+$("#restart-btn").on("click", function() {
+    
+    document.location.reload();
+
+});

@@ -1,11 +1,11 @@
 body {
-    background-image: url("../images/favThings/leaves.png");
+    background-image: url("../images/favThings/christmas_seamless.jpg");
     
 }
 
 header {
     margin: 0 auto;
-    width: 40%;
+    width: 35%;
 }
 
 label {
@@ -29,4 +29,12 @@ div form input button {
 
 .favButton {
     margin: 5px;
+}
+
+#favImg {
+    background: lavender;
+    border-radius: 5px;
+    border: dotted;
+    border-color: white;
+    width: 100%;
 }

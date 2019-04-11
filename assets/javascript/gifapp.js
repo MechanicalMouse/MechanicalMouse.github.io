@@ -1,4 +1,4 @@
-var topics = ["hamster", "space", "food", "raichu", "tea", "star trek", "runescape"]
+var topics = ["hamster", "space", "food", "raichu", "tea", "star trek", "music"]
 
 //make buttons
 function renderButtons() {    
@@ -6,20 +6,21 @@ function renderButtons() {
     $("#buttons").empty();
 
        
-       for (var i = 0; i < topics.length; i++) {
+    for (var i = 0; i < topics.length; i++) {
 
          
-         var a = $("<button>");
+        var a = $("<button>");
          
-         a.addClass("favButton btn btn-info");
+        a.addClass("favButton btn btn-info");
          
-         a.attr("data-name", topics[i]);
+        a.attr("data-name", topics[i]);
          
-         a.text(topics[i]);
+        a.text(topics[i]);
          
-         $("#buttons").append(a);
-       }
-}
+        $("#buttons").append(a);
+       
+    }
+}    
 
 //add new topic
 $("#add-button").on("click", function(event) {
@@ -70,8 +71,8 @@ $("button").on("click", function() {
                 
                 topicImage.attr("src", results[i].images.fixed_height.url);
                 topicImage.attr("data-state", "still");
-                topicImage.attr("data-still", results[i].images.fixed_height_still.url);
-                topicImage.attr("data-animate", results[i].images.fixed_height.url);
+                //topicImage.attr("data-still", results[i].images.fixed_height_still.url);
+                //topicImage.attr("data-animate", results[i].images.fixed_height.url);
                 topicImage.addClass("image");
 
                 gifDiv.prepend(p);
@@ -86,13 +87,15 @@ $("button").on("click", function() {
 });
 
 //animating gifs
-$(document).on("click", ".image", function(){
-	var state = $(this).attr("data-state");
-		if ( state === "still"){
-                $(this).attr("src", $(this).data("animate"));
-                $(this).attr("data-state", "animate");
-            }else{
-                $(this).attr("src", $(this).data("still"));
-                $(this).attr("data-state", "still");
-            };
-});
+//$(document).on("click", ".image", function(){
+	//var state = $(this).attr("data-state");
+    
+    //if ( state === "still"){
+        //$(this).attr("src", $(this).data("animate"));
+        //$(this).attr("data-state", "animate");
+    //}else{
+        //$(this).attr("src", $(this).data("still"));
+        //$(this).attr("data-state", "still");
+    //};
+
+//});

@@ -35,7 +35,7 @@ h2,
 h3 {
   font-family: Georgia, Times, "Times New Roman", serif;
   font-weight: 700;
-  color: #5a1488;
+  color: #8d44fc;
 }
 
 h1 {
@@ -59,7 +59,7 @@ h3 {
   margin: 0;
   color: #666666;
   background: #666666;
-  border-bottom: 8px solid #4aaaa5;
+  border-bottom: 8px solid #92bdfe;
 }
 
 #logo {
@@ -73,7 +73,7 @@ h3 {
   color: #ffffff;
   text-align: center;
   text-decoration: none;
-  background: #4aaaa5;
+  background: #92bdfe;
   border-top: 2px outset;
   border-left: 2px outset;
   border-right: 2px outset;
@@ -98,6 +98,25 @@ nav a:first-child {
   border-left: 0 none;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 /* footer */
 
 footer {
@@ -108,7 +127,7 @@ footer {
   color: #cccccc;
   text-align: center;
   background: #666666;
-  border-top: 8px solid #4aaaa5;
+  border-top: 8px solid #92bdfe;
   height: 50px;
 }
 
@@ -136,7 +155,7 @@ h3 {
   border-bottom: 2px solid #eeeeee;
 }
 
-/* portfolio page */
+/* portfolio section */
 
 #app {
   width: 100%;
@@ -178,7 +197,7 @@ h3 {
   line-height: 30px;
   color: #ffffff;
   text-align: center;
-  background: #4aaaa5;
+  background: #92bdfe;
   border-bottom: 0;
 }
 
@@ -190,45 +209,6 @@ h3 {
   margin-right: 25px;
 }
 
-/* contact page */
-
-#contact-form ul {
-  margin-bottom: 20px;
-}
-
-#contact-form li {
-  margin-bottom: 10px;
-}
-
-label,
-input[type=text],
-input[type=email],
-textarea {
-  display: block;
-  width: 100%;
-}
-
-input[type=text],
-input[type=email],
-textarea {
-  height: 35px;
-  padding: 0 10px;
-  font-size: 14px;
-  border: 1px solid #dddddd;
-}
-
-textarea {
-  height: 200px;
-}
-
-input[type=submit] {
-  padding: 10px 30px;
-  font-size: 18px;
-  color: #ffffff;
-  cursor: pointer;
-  background: #4aaaa5;
-  border: 0 none;
-}
 
 @media only screen and (max-width: 640px) {
   #logo{

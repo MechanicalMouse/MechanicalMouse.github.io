@@ -168,7 +168,7 @@ h3 {
 }
 
 #aboutLinks {
-  width: 4.5%;
+  width: 40px;
   height: 40px
 }
 
@@ -254,8 +254,5 @@ h3 {
 }
 
 @media only screen and (max-width: 980px) {
-  #main-container{
-    width: 75%;
-    float: left;
-  }
+  
 }

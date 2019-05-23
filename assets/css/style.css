@@ -129,6 +129,7 @@ footer {
   background: #666666;
   border-top: 8px solid #92bdfe;
   height: 50px;
+  width: 99.8%;
 }
 
 /* main */
@@ -145,6 +146,7 @@ footer {
   margin: 0 0 40px;
   background: #ffffff;
   border: 1px solid #dddddd;
+  border-radius: 15px;
 }
 
 h2, 

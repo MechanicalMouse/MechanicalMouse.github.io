@@ -246,6 +246,15 @@ h3 {
     border-left: none;
   }
   
+  #masthead {
+    border-bottom: none;
+    width: 98.1%;
+  }
+
+  #noFloat{
+    float: none
+  }
+
   nav{
     width: 45%;
   }

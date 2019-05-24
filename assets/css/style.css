@@ -256,7 +256,11 @@ h3 {
 }
 
 @media only screen and (max-width: 980px) {
+  #masthead{
+    width: 96%;
+  }
+  
   #logo {
-    width: 99.1%;
+    width: 99.7%;
   }
 }

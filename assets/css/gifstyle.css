@@ -1,11 +1,7 @@
 body {
+    margin: 0 auto;
     background-image: url("../images/favThings/snowflakes_on_purple.jpg");
     
-}
-
-header {
-    margin: 0 auto;
-    width: 35%;
 }
 
 label {
@@ -32,9 +28,10 @@ div form input button {
 }
 
 #favImg {
-    background: lavender;
+    background: rgb(248, 230, 250);
     border-radius: 5px;
     border: dotted;
     border-color: white;
-    width: 100%;
+    margin-left: 450px;
+    width: 50%;
 }

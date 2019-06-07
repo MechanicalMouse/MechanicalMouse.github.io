@@ -221,6 +221,7 @@ h3 {
     width: 100%;
     height: auto;
     margin-top: 5px;
+    border: none;
   }
 
   nav{
@@ -230,7 +231,6 @@ h3 {
   }
 
   #masthead{
-    border-bottom: none;
     width: 97.5%;
   }
 
@@ -248,7 +248,7 @@ h3 {
   
   
   #masthead {
-    border-bottom: none;
+    border-bottom: outset;
     width: 98.1%;
   }
 

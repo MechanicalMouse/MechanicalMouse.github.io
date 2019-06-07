@@ -220,14 +220,12 @@ h3 {
     display: block;
     width: 100%;
     height: auto;
-    border: none;
     margin-top: 5px;
   }
 
   nav{
-    
     width: 100%;
-    margin-top: 10px;
+    margin-top: 5px;
     text-align: center;
   }
 
@@ -247,9 +245,7 @@ h3 {
 }
 
 @media only screen and (max-width: 768px) {
-  #logo{
-    border-left: none;
-  }
+  
   
   #masthead {
     border-bottom: none;

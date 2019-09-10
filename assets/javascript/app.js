@@ -1,3 +1,4 @@
+//List of questions for quiz
 var questions = [{
     ques: "Hamsters were named from the German word 'hamustro' which means:",
     ans: ["Wheat vole", "Corn weevil", "Potato ferret", "Carrot rat"],
@@ -41,9 +42,11 @@ var questions = [{
     divClass: ".wheel",
 }];
 
+// Correct, Incorrect Arrays
 var correctAnswers = 0;
 var incorrectAnswers = 0;
 
+// Start button
 var startGame = $("#start-btn").on("click", function() {
     $(this).parent().hide();
     $(".container").show();
@@ -53,7 +56,7 @@ var startGame = $("#start-btn").on("click", function() {
 
 var labels = ["first", "second", "third", "forth"];
 
-
+// Add questions and answers
 var questionDisplay = function() {
     
     for (var j = 0; j < 6; j++) {
@@ -67,6 +70,7 @@ var questionDisplay = function() {
     }
 };
 
+// Countdown Timer, submit button
 var countdown = function(seconds) {
 
     var timer = setInterval(function() {
@@ -116,6 +120,7 @@ var countdown = function(seconds) {
     
 };
 
+// Restart button
 $("#restart-btn").on("click", function() {
     
     document.location.reload();
